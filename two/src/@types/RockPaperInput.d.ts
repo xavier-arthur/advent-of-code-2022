@@ -1,0 +1,1 @@
+export type RockPaperInput = 'A' | 'B' | 'C' | 'X' | 'Y' | 'Z';
