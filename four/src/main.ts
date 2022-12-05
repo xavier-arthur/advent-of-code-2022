@@ -40,12 +40,9 @@ rl.on('close', () => {
         let firstLength = getPairSize(pair[0]);
         let secondLength = getPairSize(pair[1]);
 
-        let biggestInterval: number[];
-        let smallerInterval: number[];
-
         // intervals are the min/max of each routine
-        biggestInterval = pair[firstLength > secondLength ? 0 : 1].split('-').map(v => parseInt(v));
-        smallerInterval = pair[firstLength > secondLength ? 1 : 0].split('-').map(v => parseInt(v));
+        let biggestInterval = pair[firstLength > secondLength ? 0 : 1].split('-').map(v => parseInt(v));
+        let smallerInterval = pair[firstLength > secondLength ? 1 : 0].split('-').map(v => parseInt(v));
 
         // this gets the intevals and creates arrays from it
         let biggestPairRange = range(biggestInterval[0], biggestInterval[1]);
