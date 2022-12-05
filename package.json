@@ -6,12 +6,15 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "build:two": "tsc --module es6 --outDir two/build two/src/main.ts",
     "build:three": "tsc --module es6 --outDir three/build three/src/main.ts",
+    "build:four": "tsc --module es6 --outDir four/build four/src/main.ts",
 
     "start:one": "node one/src/main.js",
     "start:two": "npm run build:two && node two/build/main.js",
-    "start:three": "npm run build:three && node three/build/main.js"
+    "start:three": "npm run build:three && node three/build/main.js",
+    "start:four": "npm run build:four && node four/build/main.js"
   },
   "keywords": [],
   "author": "",
